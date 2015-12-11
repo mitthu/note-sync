@@ -1,0 +1,36 @@
+#---------Sample Settings---------#
+# Sample settings file
+# This is a comment... No blank lines are allowed (even after the end of the file).
+data is valuable=value is something
+key to data="quotes automatically removed"
+int=8 # Such comments are allowed
+float datatype=9
+#---------Temp---------#
+old=note.txt
+new=note.new.txt
+patch=note.patch.txt
+#---------Common Settings---------#
+default:port=3490
+data_length=1024
+watch_folder=/home/mitthu/cprgs
+watch_file=note.txt
+cmd=file_transfer 512 Makefile
+transfer=Makefile
+auth:status=YES # Activate/Deactivate User Authentication
+database:basename=note
+#---------Server---------#
+server:dir=pool-server
+server:auth:max:retries=2
+server:database:generic=note.txt
+server:database:newfile=note.interim.txt
+server:database:patch=note.patch
+#---------Client---------#
+client:dir=pool-client
+client:default:server_addr=localhost
+client:database:generic=cache.db
+client:database:newfile=note.txt
+client:database:patch=note.patch
+#---------Users---------#
+user:mitthu=password
+user:m=m
+#---------End of File---------#

@@ -1,0 +1,5 @@
+*.o
+*.log
+*.a
+pool-client/*.txt
+pool-server/*.txt
